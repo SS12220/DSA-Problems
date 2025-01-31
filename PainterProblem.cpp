@@ -38,13 +38,15 @@ int minTimeToPaint(vector<int> ar, int n, int m){
   int sum = 0;
   int ans = -1;
 
-  for (size_t i = 0; i < n; i++)
+  for (size_t i = 0; i < n; i++) // O(n)
   {
     maxValue = max(ar[i], maxValue);
     sum+=ar[i];
   }
 
   int st = maxValue, ed = sum;
+
+  // O(log(Sum))
   while (st <= ed)
   {
     int mid = st + (ed-st)/2;
