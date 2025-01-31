@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "cmath": "cpp",
+        "format": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "vector": "cpp",
+        "algorithm": "cpp",
+        "optional": "cpp",
+        "system_error": "cpp",
+        "type_traits": "cpp",
+        "xlocmon": "cpp",
+        "xtr1common": "cpp",
+        "limits": "cpp",
+        "atomic": "cpp",
+        "xmemory": "cpp"
+    }
+}
