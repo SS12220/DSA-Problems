@@ -18,14 +18,20 @@ bool isPossible(vector<int> ar, int n, int m, int mid){
         cows++;
         lastStall = ar[i];
     }
+
+    if (cows == m)
+    {
+        return true;
+    }
   }
 
-  return cows == m;
+  return false;
 }
 
 int minTimeToPaint(vector<int> ar, int n, int m){
 
-  int st = ar[0], ed = ar[n-1];
+  int st = 1;
+  int ed = ar[n-1]-st;
   int ans = -1;
 
   // O(log(Sum))
@@ -49,8 +55,8 @@ int minTimeToPaint(vector<int> ar, int n, int m){
 }
 
 int main() {
-    vector<int> arr = {1, 2, 4 ,8, 9};
-    int n=5, m = 3;
+    vector<int> arr = {6, 7,  9, 11, 13, 15};
+    int n=6, m = 4;
     std::sort(arr.begin(), arr.end());
     
     cout << minTimeToPaint(arr, n, m) << endl;
