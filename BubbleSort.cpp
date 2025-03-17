@@ -5,7 +5,7 @@ using namespace std;
 
 // g++ BubbleSort.cpp -o output.exe; .\output.exe  
 
-void bubbleSort(vector<int> &ar, int n){
+void bubbleSort(vector<int> ar, int n){
 
   for (size_t i = 0; i < n; i++)
   {
@@ -19,6 +19,11 @@ void bubbleSort(vector<int> &ar, int n){
     }
     
   }
+
+  for (size_t i = 0; i < n; i++)
+  {
+    cout << ar[i] << endl;
+  }
   
 }
 
@@ -27,12 +32,6 @@ int main() {
     int n=5;
 
     bubbleSort(arr, n);
-
-    for (size_t i = 0; i < n; i++)
-    {
-      cout << arr[i] << endl;
-    }
     
-
     return 0;
 }
