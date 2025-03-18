@@ -25,6 +25,14 @@ void bubbleSort(vector<int> &ar, int n){ //O(n^2)
   }
 }
 
+void processArray(int arr[], int size) {
+  cout << "Array elements are: ";
+  for (int i = 0; i < size; i++) {
+      cout << arr[i] << " "; // Print each element
+  }
+  cout << endl;
+}
+
 void printArray(vector<int> ar){
   for (size_t i = 0; i < ar.size(); i++)
   {
